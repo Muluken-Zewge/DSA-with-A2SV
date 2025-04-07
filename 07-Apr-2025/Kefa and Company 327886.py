@@ -15,7 +15,7 @@ def main():
     for right in range(len(friends)):
         current_friend_factor += friends[right][1]
 
-        while friends[right][0] - friends[left][0] > d:
+        while friends[right][0] - friends[left][0] >= d:
             current_friend_factor -= friends[left][1]
             left += 1
 
