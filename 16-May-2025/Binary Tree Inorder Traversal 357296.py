@@ -17,3 +17,22 @@ class Solution:
             inorder(node.right)
         inorder(root)
         return ans
+
+#iterative approach
+        # ans = []
+        # stack = []
+        # curr = root
+        # while curr or stack:
+        #     #reach most left node
+        #     while curr:
+        #         stack.append(curr)
+        #         curr = curr.left
+        #     #access left most node
+        #     node = stack.pop()
+        #     ans.append(node.val)
+        #     #move to the right node
+        #     node = node.right
+        #     #reset curr to find the left most left element of it
+        #     curr = node
+
+        # return ans
