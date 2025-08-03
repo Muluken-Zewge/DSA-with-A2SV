@@ -1,0 +1,8 @@
+# Problem: Largest Odd Number in String - https://leetcode.com/problems/largest-odd-number-in-string/
+
+class Solution:
+    def largestOddNumber(self, num: str) -> str:
+        for i in reversed(range(len(num))):
+            if int(num[i]) % 2 == 1:
+                return num[:i+1]
+        return ""
